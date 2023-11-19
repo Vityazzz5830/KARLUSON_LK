@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<link rel="stylesheet" href="../css/styles_сurier_header_nologin.css">
+	<link rel="stylesheet" href="../css/media.css">
+
+	<title>KARLUSON</title>
+</head>
+
+<body>
+	<div class="content">
+		<header>
+			<div class="info-header">
+			  <div class="container">
+				<div class="header-info-wrap">
+				  <div id="select-city-container">
+					<div id="select-city" class="select-city"><img src="../images/map.svg" alt="map"> <div class="select-city-block"><span id="header-city-name" data-city-id="4" class="city"><span>Краснодар</span> <small>▼</small> <div class="dropdown-menu"><div class="menu-arrow"><img src="../images/cities-arrow.svg" alt="arrow"></div> <ul class="drop-list"><li class="drop-item"><a href="/setSessionCity?id=1">Москва</a></li> <li class="drop-item"><a href="/setSessionCity?id=2">Санкт-Петербург</a></li> <li class="drop-item"><a href="/setSessionCity?id=3">Екатеринбург</a></li> <li class="drop-item"><a href="/setSessionCity?id=4">Краснодар</a></li> <li class="drop-item"><a href="/setSessionCity?id=5">Челябинск</a></li> <li class="drop-item"><a href="/setSessionCity?id=6">Н. Новгород</a></li> <li class="drop-item"><a href="/setSessionCity?id=78">Казань</a></li></ul></div></span> <span class="number"><a href="tel:+78612050493">+7 (861) 205-04-93</a></span></div></div>
+				  </div>
+				  <div class="feedback-button">
+					<a href="javascript:void(0);" data-modal="feedback" class="btn-modal">
+					  <img src="../images/phone-header.svg" alt="contact-us">
+					  <span>Заказать обратный звонок</span>
+					</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="main-header">
+			  <div class="container">
+				<div class="main-header-wrap">
+				  <div class="logo">
+					<a href="#">
+					  <img src="../images/logo.png" alt="logo">
+					</a>
+				  </div>
+				  <nav>
+					<ul class="navigation-list">
+					  <li class="nav-item button ">
+						<a href="#/orderDelivery">Заказать доставку </a>
+					  </li>
+					  <li class="nav-item ">
+						<a href="#/tarify">Тарифы</a>
+					  </li>
+					  <li class="nav-item dropdown ">
+						<span>Услуги <small>&nbsp;▼</small></span>
+						<div class="dropdown-menu">
+						  <div class="menu-arrow">
+							<img src="../images/cities-arrow.svg" alt="arrow">
+						  </div>
+						  <ul class="drop-list">
+																												  <li class="drop-item"><a class="" href="#/krd/service/express">Экспресс-доставка</a></li>
+																																	  <li class="drop-item"><a class="" href="#/krd/service/documents">Курьерская доставка документов</a></li>
+																																																														<li class="drop-item"><a class="" href="#/krd/service/internet">Курьерская доставка для магазинов</a></li>
+																																																																																										  <li class="drop-item"><a class="" href="#/krd/service/delivery_with_redemption">Доставка с выкупом товара</a></li>
+																																	  <li class="drop-item"><a class="" href="#/krd/service/deliveryP">Курьерская доставка посылок</a></li>
+																  <li class="drop-item"><a class="" href="#/punkty_vydachi">Пункты выдачи</a></li>
+						  </ul>
+						</div>
+					  </li>
+					  <li class="nav-item dropdown ">
+						<span>Курьеру <small>&nbsp;▼</small></span>
+						<div class="dropdown-menu">
+						  <div class="menu-arrow">
+							<img src="../images/cities-arrow.svg" alt="arrow">
+						  </div>
+						  <ul class="drop-list">
+																																																																																																																																					<li class="drop-item"><a class="" href="#/krd/courier/rabota_kurierom_na_lichnom_avto">Работа курьером на личном авто</a></li>
+																																	  <li class="drop-item"><a class="" href="#/krd/courier/rabota_peshim_kurierom">Работа пешим курьером</a></li>
+																									  </ul>
+						</div>
+					  </li>
+					  <li class="nav-item ">
+						<a href="#/tracking">Отследить заказ</a>
+					  </li>
+					  <li class="nav-item ">
+						<a href="#/otzyvy">Отзывы</a>
+					  </li>
+					  <li class="nav-item">
+						<a href="javascript:void(0);" class="btn-modal" data-modal="auth">Войти</a>
+					  </li>
+					  <li class="nav-item registration">
+						<a href="javascript:void(0);" class="btn-modal client" data-modal="reg">Зарегистрироваться</a>
+					  </li>
+					</ul>
+				  </nav>
+				  <button class="burger" id="open-menu">
+					<img src="/images/newHeader/menu.png" alt="burger">
+				  </button>
+				</div>
+			  </div>
+			</div>
+			<div class="mobile-header">
+			  <div class="overlay" id="overlay"></div>
+			  <div class="header-block" id="header-block">
+				<ul class="nav-menu" id="nav-menu">
+				  <li class="nav-item">
+					<a href="#/orderDelivery">Рассчитать доставку</a>
+				  </li>
+				  <li class="nav-item">
+					<a href="#/tarify">Тарифы</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<span>Услуги</span>
+					<img src="/images/newMain/mb-menu-arrow.svg" alt="mb-menu-arrow">
+					<ul class="drop-list">
+																					<li class="drop-item"><a class="" href="#/krd/service/express">Экспресс-доставка</a></li>
+																								  <li class="drop-item"><a class="" href="#/krd/service/documents">Курьерская доставка документов</a></li>
+																																																		  <li class="drop-item"><a class="" href="#/krd/service/internet">Курьерская доставка для магазинов</a></li>
+																																																									  <li class="drop-item"><a class="" href="#/punkty_vydachi">Пункты выдачи</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item dropdown">
+					<span>Курьеру</span>
+					<img src="/images/newMain/mb-menu-arrow.svg" alt="mb-menu-arrow">
+					<ul class="drop-list">
+																																																																																												  <li class="drop-item"><a class="" href="#/krd/courier/rabota_kurierom_na_lichnom_avto">Работа курьером на личном авто</a></li>
+																								  <li class="drop-item"><a class="" href="#/krd/courier/rabota_peshim_kurierom">Работа пешим курьером</a></li>
+																		</ul>
+				  </li>
+				  <li class="nav-item">
+					<a href="#/tracking">Отследить заказ</a>
+				  </li>
+				  <li class="nav-item">
+					<a href="#/otzyvy">Отзывы</a>
+				  </li>
+				  <li class="nav-item">
+					<a href="javascript:void(0);" data-modal="feedback" class="btn-modal">Заказать обратный звонок</a>
+				  </li>
+				  <li class="nav-item separated">
+					<div class="authorization-buttons">
+					  <a href="javascript:void(0);" class="red btn-modal client" data-modal="reg">Регистрация</a>
+					  <span>&nbsp;|&nbsp;</span>
+					  <a href="javascript:void(0);" class="btn-modal" data-modal="auth">Личный кабинет</a>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<!-- Логика работы модальных окон находится в папке frontend/apps/modalForms -->
+		  <div class="modal-forms"><div mode="out-in"></div></div>
+		  
+		  </header>
+		<div class="wrapper">
+			<main>
+      
+				<style>
+				.ya-share2 .ya-share2__list {
+					margin: 0 !important;
+					padding: 0 !important;
+				}
+				.ya-share2 {
+					margin: 24px auto 18px auto;
+					width: max-content;
+				}
+				#app-container {
+					margin-bottom: 60px;
+				}
+				</style>
+				<div class="container" id="app-container">
+					<div data-v-4f84015c="">
+						<div><!---->
+							<main data-v-4f84015c="" class="default-layout">
+								<ul data-v-4f84015c="" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList"
+									class="bread-crumbs">
+									<li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a
+											itemtype="http://schema.org/Thing" itemprop="item" href="#"><span
+												itemprop="name">Главная</span></a>
+										<meta itemprop="position" content="1">
+									</li>
+									<li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><span
+											itemprop="name">Топ курьеров за октябрь</span>
+										<meta itemprop="position" content="2">
+									</li>
+								</ul>
+								<div data-v-4f84015c="" class="section-title">
+									<h1 class="title">Топ курьеров за октябрь</h1>
+								</div>
+								<div data-v-4f84015c="" class="post-content">
+									<div data-v-22107951="" data-v-4f84015c="" class="navigation-block"><span data-v-22107951="">Топ за:
+										</span><span data-v-22107951=""><a data-v-22107951="" class="link active">октябрь</a><span
+												data-v-22107951=""> / </span></span><span data-v-22107951=""><a data-v-22107951=""
+												class="link">ноябрь</a><span data-v-22107951=""> / </span></span><span data-v-22107951=""><a
+												data-v-22107951="" class="link">24 часа</a><!----></span></div>
+									<div data-v-4f84015c="">
+										<div>
+											<div data-v-0ca5e874="" data-v-4f84015c="" class="table-main-wrap wdr-table top-couriers">
+												<div class="table-main"><!---->
+													<div class="blocks-table">
+														<ul class="b-table-head">
+															<li class="b-head-item"> № </li>
+															<li class="b-head-item"> Курьер </li>
+															<li class="b-head-item"> Рейтинг </li>
+															<li class="b-head-item"> Доход </li>
+															<li class="b-head-item"> Кол-во заказов </li>
+														</ul>
+														<ul class="b-table-body">
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>1</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container">
+																				<div data-v-59ea4e6f="" data-v-788f5850=""
+																					class="ring-container"
+																					style="--328b28f0: 70px; --5277e8b6: 70px; --0c778390: 5px;">
+																					<div data-v-59ea4e6f="" class="outer-ring center"></div>
+																					<img data-v-59ea4e6f="" src="../images/478547.jpg"
+																						alt="Агурин Александр " class="inner-ring center">
+																				</div>
+																			</div><span data-v-23ad5f46="">Агурин Александр </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>112&nbsp;859</span></li>
+																	<li class="b-row-item"><span>136</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>2</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container"><img data-v-788f5850=""
+																					src="../images/456281.jpg" alt="Феськов Сергей "
+																					style="width: 70px; height: 70px;"></div><span
+																				data-v-23ad5f46="">Феськов Сергей </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>75&nbsp;476</span></li>
+																	<li class="b-row-item"><span>192</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>3</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container"><img data-v-788f5850=""
+																					src="../images/6520.jpg" alt="Дюгай Виталий "
+																					style="width: 70px; height: 70px;"></div><span
+																				data-v-23ad5f46="">Дюгай Виталий </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>74&nbsp;161</span></li>
+																	<li class="b-row-item"><span>95</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>4</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container"><img data-v-788f5850=""
+																					src="../images/417261.jpg" alt="Побединский Анатолий "
+																					style="width: 70px; height: 70px;"></div><span
+																				data-v-23ad5f46="">Побединский Анатолий </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>68&nbsp;705</span></li>
+																	<li class="b-row-item"><span>87</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>5</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container"><img data-v-788f5850=""
+																					src="../images/652165.jpg" alt="Меркеев Михаил "
+																					style="width: 70px; height: 70px;"></div><span
+																				data-v-23ad5f46="">Меркеев Михаил </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>65&nbsp;206</span></li>
+																	<li class="b-row-item"><span>117</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>6</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container">
+																				<div data-v-59ea4e6f="" data-v-788f5850=""
+																					class="ring-container"
+																					style="--328b28f0: 70px; --5277e8b6: 70px; --0c778390: 5px;">
+																					<div data-v-59ea4e6f="" class="outer-ring center"></div>
+																					<img data-v-59ea4e6f="" src="../images/452162.jpg"
+																						alt="Скрипец Дмитрий " class="inner-ring center">
+																				</div>
+																			</div><span data-v-23ad5f46="">Скрипец Дмитрий </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>64&nbsp;323</span></li>
+																	<li class="b-row-item"><span>83</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>7</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container"><img data-v-788f5850=""
+																					src="../images/269035.jpg" alt="Журавлева Екатерина "
+																					style="width: 70px; height: 70px;"></div><span
+																				data-v-23ad5f46="">Журавлева Екатерина </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>61&nbsp;342</span></li>
+																	<li class="b-row-item"><span>115</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>8</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container"><img data-v-788f5850=""
+																					src="../images/365166.jpg" alt="Десятов Кристиан "
+																					style="width: 70px; height: 70px;"></div><span
+																				data-v-23ad5f46="">Десятов Кристиан </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>61&nbsp;239</span></li>
+																	<li class="b-row-item"><span>105</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>9</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container">
+																				<div data-v-59ea4e6f="" data-v-788f5850=""
+																					class="ring-container"
+																					style="--328b28f0: 70px; --5277e8b6: 70px; --0c778390: 5px;">
+																					<div data-v-59ea4e6f="" class="outer-ring center"></div>
+																					<img data-v-59ea4e6f="" src="../images/650768.jpg"
+																						alt="Артемьева Настасья " class="inner-ring center">
+																				</div>
+																			</div><span data-v-23ad5f46="">Артемьева Настасья </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>61&nbsp;162</span></li>
+																	<li class="b-row-item"><span>94</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>10</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container"><img data-v-788f5850=""
+																					src="../images/567213.jpg" alt="Никитин Александр "
+																					style="width: 70px; height: 70px;"></div><span
+																				data-v-23ad5f46="">Никитин Александр </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>60&nbsp;506</span></li>
+																	<li class="b-row-item"><span>125</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>11</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container"><img data-v-788f5850=""
+																					src="../images/543979.jpg" alt="Орлов Андрей "
+																					style="width: 70px; height: 70px;"></div><span
+																				data-v-23ad5f46="">Орлов Андрей </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>60&nbsp;095</span></li>
+																	<li class="b-row-item"><span>85</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>12</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container">
+																				<div data-v-59ea4e6f="" data-v-788f5850=""
+																					class="ring-container"
+																					style="--328b28f0: 70px; --5277e8b6: 70px; --0c778390: 5px;">
+																					<div data-v-59ea4e6f="" class="outer-ring center"></div>
+																					<img data-v-59ea4e6f="" src="../images/145711.jpg"
+																						alt="Душенков Сергей " class="inner-ring center">
+																				</div>
+																			</div><span data-v-23ad5f46="">Душенков Сергей </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>57&nbsp;607</span></li>
+																	<li class="b-row-item"><span>103</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>13</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container">
+																				<div data-v-59ea4e6f="" data-v-788f5850=""
+																					class="ring-container"
+																					style="--328b28f0: 70px; --5277e8b6: 70px; --0c778390: 5px;">
+																					<div data-v-59ea4e6f="" class="outer-ring center"></div>
+																					<img data-v-59ea4e6f="" src="../images/225370.jpg"
+																						alt="Лупинович Александр "
+																						class="inner-ring center">
+																				</div>
+																			</div><span data-v-23ad5f46="">Лупинович Александр </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>55&nbsp;432</span></li>
+																	<li class="b-row-item"><span>75</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>14</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container">
+																				<div data-v-59ea4e6f="" data-v-788f5850=""
+																					class="ring-container"
+																					style="--328b28f0: 70px; --5277e8b6: 70px; --0c778390: 5px;">
+																					<div data-v-59ea4e6f="" class="outer-ring center"></div>
+																					<img data-v-59ea4e6f="" src="../images/559942.jpg"
+																						alt="Каманин Александр " class="inner-ring center">
+																				</div>
+																			</div><span data-v-23ad5f46="">Каманин Александр </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>52&nbsp;376</span></li>
+																	<li class="b-row-item"><span>76</span></li>
+																</ul>
+															</li>
+															<li class="b-body-row white-block">
+																<ul class="b-row-content">
+																	<li class="b-row-item"><span>15</span></li>
+																	<li class="b-row-item">
+																		<div data-v-23ad5f46="" class="courier-card">
+																			<div data-v-788f5850="" data-v-23ad5f46=""
+																				class="courier-avatar-container"><img data-v-788f5850=""
+																					src="../images/268068.jpg"
+																					alt="Жиганова Наталья "
+																					style="width: 70px; height: 70px;"></div><span
+																				data-v-23ad5f46="">Жиганова Наталья </span>
+																		</div>
+																	</li>
+																	<li class="b-row-item"><span>100</span></li>
+																	<li class="b-row-item"><span>50&nbsp;055</span></li>
+																	<li class="b-row-item"><span>114</span></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</div><!---->
+											</div><span data-v-4f84015c="" class="notify"> Заработанные денежные средства указаны за вычетом
+												комиссии сервиса. </span>
+										</div>
+									</div>
+								</div>
+							</main>
+						</div>
+					</div>
+					<!-- Блок поделиться -->
+					<div class="ya-share2 ya-share2_inited" data-services="vkontakte,facebook,odnoklassniki,twitter" data-counter="" data-title:twitter="Топ курьеров"><div class="ya-share2__container ya-share2__container_size_m ya-share2__container_color-scheme_normal ya-share2__container_shape_normal"><ul class="ya-share2__list ya-share2__list_direction_horizontal"><li class="ya-share2__item ya-share2__item_service_vkontakte"><a class="ya-share2__link" href="https://vk.com/share.php?url=https%3A%2F%2F#.ru%2Ftop_couriers%3Fperiod%3Dprev&amp;title=%D0%A2%D0%BE%D0%BF%20%D0%BA%D1%83%D1%80%D1%8C%D0%B5%D1%80%D0%BE%D0%B2&amp;utm_source=share2" rel="nofollow noopener" target="_blank" title="ВКонтакте"><span class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span class="ya-share2__title">ВКонтакте</span></a></li><li class="ya-share2__item ya-share2__item_service_odnoklassniki"><a class="ya-share2__link" href="https://connect.ok.ru/offer?url=https%3A%2F%2F#.ru%2Ftop_couriers%3Fperiod%3Dprev&amp;title=%D0%A2%D0%BE%D0%BF%20%D0%BA%D1%83%D1%80%D1%8C%D0%B5%D1%80%D0%BE%D0%B2&amp;utm_source=share2" rel="nofollow noopener" target="_blank" title="Одноклассники"><span class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span class="ya-share2__title">Одноклассники</span></a></li><li class="ya-share2__item ya-share2__item_service_twitter"><a class="ya-share2__link" href="https://twitter.com/intent/tweet?text=%D0%A2%D0%BE%D0%BF%20%D0%BA%D1%83%D1%80%D1%8C%D0%B5%D1%80%D0%BE%D0%B2&amp;url=https%3A%2F%2F#.ru%2Ftop_couriers%3Fperiod%3Dprev&amp;utm_source=share2" rel="nofollow noopener" target="_blank" title="Twitter"><span class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span class="ya-share2__title">Twitter</span></a></li></ul></div></div>
+					<!-- скрипты для блока "Поделиться" -->
+					<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+					<script src="//yastatic.net/share2/share.js"></script>
+				</div>
+				
+				<section class="mobile-app mobile-app-with-buttons">
+				  <div class="container">
+					<div class="mobile-app-wrap">
+					  <div class="block-description">
+						<div class="title-wrap">
+						  <h2 class="title">Скачайте приложение и начните зарабатывать</h2>
+						  <div class="description">Выбирайте доставки удобные по цене, адресам и времени</div>
+						</div>
+						<div class="description-text">
+						  <p>Работайте в свободное время, получая ежедневный доход, достаточно установить на смартфон приложение и
+							подработка курьером для Вас открыта. Развозите посылки, когда удобно. Откройте приложение и выбирайте
+							заказы, которые вам по пути.
+						  </p>
+						</div>
+						<ul class="checks">
+						  <li class="check-item">
+							<img src="../images/check.svg" alt="check">
+							<p>Скачайте приложение и развозите посылки</p>
+						  </li>
+						  <li class="check-item">
+							<img src="../images/check.svg" alt="check">
+							<p>Зарабатывайте деньги каждый день</p>
+						  </li>
+						  <li class="check-item">
+							<img src="../images/check.svg" alt="check">
+							<p>Поддержка прямо в приложении</p>
+						  </li>
+						</ul>
+						<script>
+				  function sendAppStoreMetric() {
+					if (typeof ym !== 'undefined') ym(41864514, 'reachGoal', 'Download_iOS')
+				  }
+				
+				  function sendAndroidMetric() {
+					if (typeof ym !== 'undefined') ym(41864514, 'reachGoal', 'Download_Android')
+				  }
+				</script>
+				
+				<div class="app-links">
+				  <div class="qr-code">
+					<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" src="/images/seo/qr-code.svg" data-srcset="/images/seo/qr-code.svg" alt="qr-code" width="220" height="220">  </div>
+				  <a href="https://itunes.apple.com/ru/app/peskariki-sluzba-dostavki/id1025228857" onclick="sendAppStoreMetric()" target="_blank">
+					<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" src="/images/newMain/app-store.svg" data-srcset="/images/newMain/app-store.svg" alt="app-store" width="160" height="60">  </a>
+				  <a href="https://play.google.com/store/apps/details?id=com.app.#" onclick="sendAndroidMetric()" target="_blank">
+					<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" src="/images/newMain/google-play.svg" data-srcset="/images/newMain/google-play.svg" alt="google-play" width="160" height="60">  </a>
+				  <a href="https://appgallery.huawei.com/app/C104670557" onclick="sendAndroidMetric()" target="_blank">
+					<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" src="/images/newMain/appgallery_#.svg" data-srcset="/images/newMain/appgallery_#.svg" alt="app-gallery" width="160" height="60">  </a>
+				</div>
+					  </div>
+					  <div class="phone-image">
+						<img class=" lazyloaded" srcset="../images/mobile-phone-with-app.svg" loading="lazy" src="../images/mobile-phone-with-app.svg" data-srcset="../images/mobile-phone-with-app.svg" alt="mobile-phone-with-app" width="200" height="537">        <div class="right last-orders">
+						  <h4 class="last-orders-title">Последние заказы:</h4>
+						  <ul id="orders-list">
+					<li class="order-item hide" id="fade-block0"><p>HGS7047 - 956 ₽</p><small>Запланирован</small></li><li class="order-item hide" id="fade-block1"><p>RGS7046 - 651 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block2"><p>FDQ7045 - 585 ₽</p><small>Запланирован</small></li><li class="order-item hide" id="fade-block3"><p>FFT7043 - 437 ₽</p><small>Запланирован</small></li><li class="order-item hide" id="fade-block4"><p>YDQ7041 - 323 ₽</p><small>Запланирован</small></li><li class="order-item hide" id="fade-block5"><p>BGN7039 - 1325 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block6"><p>BGT7038 - 617 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block7"><p>DRZ7037 - 651 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block8"><p>QTQ7036 - 603 ₽</p><small>Запланирован</small></li><li class="order-item hide" id="fade-block9"><p>YFH7035 - 216 ₽</p><small>Запланирован</small></li><li class="order-item hide" id="fade-block10"><p>RBN7032 - 204 ₽</p><small>Запланирован</small></li><li class="order-item hide" id="fade-block11"><p>FTR7028 - 1165 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block12"><p>DRD7025 - 642 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block13"><p>TZR7024 - 365 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block14"><p>AZY7023 - 643 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block15"><p>AGK7022 - 418 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block16"><p>NRH7021 - 493 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block17"><p>RNE7020 - 653 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block18"><p>ENE7019 - 400 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block19"><p>KYF7018 - 750 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block20"><p>GHS7017 - 745 ₽</p><small>Запланирован</small></li><li class="order-item hide" id="fade-block21"><p>YBS7016 - 735 ₽</p><small>Доставлен получателю</small></li><li class="order-item hide" id="fade-block22"><p>KRT7015 - 818 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block23"><p>SNF7014 - 417 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block24"><p>ZHH7013 - 435 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block25"><p>NHG7012 - 827 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block26"><p>DSZ7010 - 1100 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block27"><p>AQN7009 - 579 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block28"><p>KEK7008 - 894 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block29"><p>DES7003 - 412 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block30"><p>BRA7002 - 391 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block31"><p>QHK7000 - 387 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block32"><p>ZDB6999 - 484 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block33"><p>AKQ6998 - 829 ₽</p><small>Доставлен получателю</small></li><li class="order-item hide" id="fade-block34"><p>ZHE6997 - 275 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block35"><p>GBY6994 - 363 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block36"><p>FHD6989 - 384 ₽</p><small>Получен у отправителя</small></li><li class="order-item hide" id="fade-block37"><p>SKG6988 - 415 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block38"><p>BTR6981 - 457 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block39"><p>TDT6980 - 635 ₽</p><small>Запланирован</small></li><li class="order-item hide" id="fade-block40"><p>TDG6977 - 498 ₽</p><small>Доставлен получателю</small></li><li class="order-item hide" id="fade-block41"><p>ETT6976 - 303 ₽</p><small>Принят в работу</small></li><li class="order-item hide" id="fade-block42"><p>EES6975 - 400 ₽</p><small>Доставлен получателю</small></li><li class="order-item hide" id="fade-block43"><p>SZA6973 - 462 ₽</p><small>Принят в работу</small></li><li class="order-item" id="fade-block44"><p>FKD6971 - 393 ₽</p><small>Принят в работу</small></li><li class="order-item" id="fade-block45"><p>TBK6969 - 443 ₽</p><small>Принят в работу</small></li><li class="order-item" id="fade-block46"><p>GRS6966 - 562 ₽</p><small>Получен у отправителя</small></li><li class="order-item" id="fade-block47"><p>HZG6960 - 827 ₽</p><small>Принят в работу</small></li><li class="order-item" id="fade-block48"><p>RRZ6959 - 282 ₽</p><small>Получен у отправителя</small></li><li class="order-item" id="fade-block49"><p>EGE6951 - 409 ₽</p><small>Получен у отправителя</small></li></ul>
+						</div>
+						<script>
+				  function sendAppStoreMetric() {
+					if (typeof ym !== 'undefined') ym(41864514, 'reachGoal', 'Download_iOS')
+				  }
+				
+				  function sendAndroidMetric() {
+					if (typeof ym !== 'undefined') ym(41864514, 'reachGoal', 'Download_Android')
+				  }
+				</script>
+				
+				<div class="app-links">
+				  <div class="qr-code">
+					<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" src="/images/seo/qr-code.svg" data-srcset="/images/seo/qr-code.svg" alt="qr-code" width="220" height="220">  </div>
+				  <a href="https://itunes.apple.com/ru/app/peskariki-sluzba-dostavki/id1025228857" onclick="sendAppStoreMetric()" target="_blank">
+					<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" src="/images/newMain/app-store.svg" data-srcset="/images/newMain/app-store.svg" alt="app-store" width="160" height="60">  </a>
+				  <a href="https://play.google.com/store/apps/details?id=com.app.#" onclick="sendAndroidMetric()" target="_blank">
+					<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" src="/images/newMain/google-play.svg" data-srcset="/images/newMain/google-play.svg" alt="google-play" width="160" height="60">  </a>
+				  <a href="https://appgallery.huawei.com/app/C104670557" onclick="sendAndroidMetric()" target="_blank">
+					<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" src="/images/newMain/appgallery_#.svg" data-srcset="/images/newMain/appgallery_#.svg" alt="app-gallery" width="160" height="60">  </a>
+				</div>
+					  </div>
+					</div>
+				  </div>
+				</section>
+					</main>
+			<footer>
+				<div class="full_container">
+					<div class="footer_content_uppart">
+						<div class="main__container">
+							<div class="footer_uppart">
+								<div class="footer_uppart-leftpart">
+									<a href="#">
+										<img src="../images/logo.png" alt="">
+									</a>
+								</div>
+								<div class="footer_uppart-rightpart">
+									<div class="footer_uppart-rightpart-menu">
+										<nav class="footer_uppart-rightpart-navmenu">
+											<ul class="footer_uppart-rightpart-navmenu-list">
+												<li class="footer_uppart-rightpart-navmenu-list-item">
+													<a href="">Контакты</a>
+												</li>
+												<li class="footer_uppart-rightpart-navmenu-list-item">
+													<a href="">FAQ для заказчиков</a>
+												</li>
+												<li class="footer_uppart-rightpart-navmenu-list-item">
+													<a href="">Юрлицам</a>
+												</li>
+												<li class="footer_uppart-rightpart-navmenu-list-item">
+													<a href="">Регламент возмещения</a>
+												</li>
+												<li class="footer_uppart-rightpart-navmenu-list-item">
+													<a href="">Партнерская программа</a>
+												</li>
+												<li class="footer_uppart-rightpart-navmenu-list-item">
+													<a href="">Информация</a>
+												</li>
+												<li
+													class="footer_uppart-rightpart-navmenu-list-item footer_uppart-rightpart-navmenu-list-item-callbutton">
+													<a href="">Обратная связь</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="full_container">
+					<div class="footer_content_centrepart">
+						<div class="main__container">
+							<div class="footer_content_centrepart-content">
+								<div class="footer_content_centrepart-content-leftparts">
+									<div class="footer_content_centrepart-content-leftparts-menu">
+										<div class="footer_content_centrepart-content-leftparts-menu-item">
+											<p>ООО «Карлсон»</p>
+										</div>
+										<div class="footer_content_centrepart-content-leftparts-menu-item">
+											<p><b>Москва:</b> +7 (495) 120-17-28</p>
+										</div>
+										<div class="footer_content_centrepart-content-leftparts-menu-item">
+											<p><b>Екатеринбург:</b> +7 (343) 243-58-79</p>
+										</div>
+										<div class="footer_content_centrepart-content-leftparts-menu-item">
+											<p><b>ИНН</b> 7814737269</p>
+										</div>
+										<div class="footer_content_centrepart-content-leftparts-menu-item">
+											<p><b>Петербург:</b> +7 (812) 748-26-37</p>
+										</div>
+										<div class="footer_content_centrepart-content-leftparts-menu-item">
+											<p><b>Казань:</b> +7 (843) 216-06-31</p>
+										</div>
+										<div class="footer_content_centrepart-content-leftparts-menu-item">
+											<p><b>ОГРН</b> 1187847221650</p>
+										</div>
+										<div class="footer_content_centrepart-content-leftparts-menu-item">
+											<p><b>Краснодар:</b> +7 (861) 205-04-93</p>
+										</div>
+										<div class="footer_content_centrepart-content-leftparts-menu-item">
+											<p><b>Email:</b> info@karlson.ru</p>
+										</div>
+									</div>
+								</div>
+								<div class="footer_content_centrepart-content-rightparts">
+									<div class="footer_content_centrepart-content-rightparts-menu">
+										<div class="footer_content_centrepart-content-rightparts-menu-item">
+											<a href="#"><img src="../images/app-store.svg" alt=""></a>
+										</div>
+										<div class="footer_content_centrepart-content-rightparts-menu-item">
+											<a href="#"><img src="../images/google-play.svg" alt=""></a>
+										</div>
+										<div class="footer_content_centrepart-content-rightparts-menu-item">
+											<a href="#"><img src="../images/appgallery.svg" alt=""></a>
+										</div>
+										<div
+											class="footer_content_centrepart-content-rightparts-menu-item footer_content_centrepart-content-rightparts-menu-item-VK">
+											<a href="#"><img src="../images/VK.svg" alt=""></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="full_container">
+					<div class="footer_content_downpart">
+						<div class="main__container">
+							<div class="footer_content_downpart-content">
+								<div class="footer_content_downpart-content-leftpart">
+									<p>© 2023 Сервис вызова курьера и пункты выдачи «Карлсон»</p>
+									<p>Современная система краудсорсинговой доставки для интернет-магазинов и частных
+										лиц</p>
+								</div>
+								<div class="footer_content_downpart-content-leftpart-rightpart">
+									<a href="#">Политика конфедициальности</a>
+									<a href="#">Пользовательское соглашение</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div><!---->
+	</div>
+</body>
+
+<script src="../js/main.js"></script>
+
+</html>
