@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="11" viewBox="0 0 20 11">
+  <g id="cities-arrow" transform="translate(-356 -744)">
+    <g id="cities-arrow-2" data-name="cities-arrow" transform="translate(356 744)" fill="#fff">
+      <path d="M10,0,20,10H0Z" stroke="none"/>
+      <path d="M 10 1.414219856262207 L 2.414220809936523 9 L 17.58577919006348 9 L 10 1.414219856262207 M 10 0 L 20 10 L 0 10 L 10 0 Z" stroke="none" fill="rgba(0,0,0,0.1)"/>
+    </g>
+    <rect id="Rectangle_3285" data-name="Rectangle 3285" width="20" height="3" transform="translate(356 752)" fill="#fff"/>
+  </g>
+</svg>
